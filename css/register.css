@@ -1,0 +1,131 @@
+.main {
+  background-color: white;
+  opacity: 0.76;
+  border: 1px solid #E3E3E3;
+  border-radius: 5px;
+  padding: 25px;
+  margin-top: 10%;
+  text-align: center;
+  width: 30%;
+}
+
+.signup-container {
+  margin-top: 10%;
+  padding: 3em;
+}
+
+.input-field {
+  margin-top: 2em;
+}
+
+.plain {
+  height: 960px;
+  padding: 50px;
+  background-image: url(../images/index.jpg)
+  background-size: 100%;
+}
+
+.submit-button {
+  color: white;
+  font-size: 1em;
+  background-color: rgba(179,119,82,0.85);
+  border-color: transparent;
+  border-radius: 0px;
+  font-family: "Oswald",Helvetica,sans-serif;
+  line-height: 25px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.submit-button:hover {
+  background-color: #270c1d
+}
+
+select {
+  width: 30% !important;
+}
+
+.ng-invalid.ng-dirty {
+  border-color: #FA787E;
+}
+
+.form-div {
+  background-color: white;
+  box-shadow: 0 2px 3px 2px rgba(0,0,0,.2);
+  border-radius: 4px;
+  width: 40%;
+  margin: 0 auto;
+  padding: 3em 0;
+  text-align: center;
+}
+
+.form-group {
+  padding-left: 4.5em;
+}
+
+.ng-valid.ng-dirty {
+  border-color: #78FA89;
+}
+
+.signup-header {
+  margin-top: -0.3em;
+  margin-bottom: 1em;
+
+}
+
+.error-page{
+  background-image: url("../images/404.jpg");
+  background-size: 100% auto;
+}
+
+.error {
+  color: red;
+  text-align: center;
+}
+
+.main-bucketlist {
+  border: 2px solid red;
+  padding: 3em;
+  min-height: 20px;
+  width: 100%;
+}
+
+.blist {
+  background-color: #fff;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  height: auto;
+  margin-bottom: 10px;
+  padding:  0.5em 1.5em 0.5em 0.5em;
+  width: 85%;
+}
+
+
+.blistrow{
+  padding: 5px 10px 15px 20px;
+}
+
+.blist-name{
+  color: #5D5D5D;
+  font-size: 18px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  width: 80%;
+}
+
+.email-field {
+  border-radius: 0px;
+  height: 45px !important;
+  margin-bottom: 30px !important;
+  width: 80% !important;
+}
+
+h4 {
+  height: 50px;
+}

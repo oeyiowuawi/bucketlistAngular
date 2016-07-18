@@ -1,0 +1,154 @@
+.sinlge-bucket-section {
+
+  min-height:45%;
+  height: 37em;
+  padding: 90px;
+  background: #424242 url(../images/sectionbg2.jpg) no-repeat top left;
+  background-size: 100%;
+}
+
+.single-bucket-top-div {
+  padding-bottom: 40px;
+
+}
+
+.bucket-title {
+  color: #9DC880;
+}
+
+.my-progress {
+  width: 30%;
+}
+
+.bucket-details {
+  position: absolute;
+  top: 530px;
+  font-size: 0.8em
+}
+
+.date {
+  color: #929292;
+}
+
+.bucket-date {
+  padding-left: 5px;
+}
+
+.items-container {
+  margin-top: 2em !important;
+  margin: auto;
+  min-height: 10em;
+  padding: 2em;
+  width: 90%;
+}
+
+.list-item {
+  border-bottom: 1px dotted grey;
+  margin-bottom: 1.5em;
+  padding-bottom: 19px;
+  height: auto;
+  width: 90%;
+}
+
+.list-text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+      color: #8d8d8d;
+    line-height: 28px;
+  text-transform: capitalize;
+}
+
+.section-bucketlists {
+  padding: 5em;
+}
+
+.card {
+  display: inline-block;
+  margin: 1em;
+  width: 22%;
+}
+
+.text-muted {
+  color: white;
+}
+.card-link-a {
+  color: #000;
+
+}
+
+.card-details {
+   background-color: rgba(179,119,82,0.85);
+}
+
+.bucketlist-btn {
+  background-color: #3D4045;
+  border-color: transparent;
+  border-radius: 0px;
+  font-family: "Oswald",Helvetica,sans-serif;
+  color: white;
+  line-height: 25px;
+  letter-spacing: 2px;
+  padding: 8px 10px;
+  text-align: center;
+  width: 22%;
+  display: inline-block;
+}
+
+.create {
+  margin: 5em;
+  text-align: center;
+}
+
+.bucket-field {
+  border-radius: 0px;
+  height: 45px !important;
+  margin-bottom: 30px !important;
+  width: 100% !important;
+}
+
+.item-title {
+  font-family: 'Droid Sans', sans-serif;
+  color: #2d2d2d;
+}
+
+.tarea {
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+h5 {
+  margin-bottom: 2.2em;
+}
+
+.fa-check-circle {
+  color: green;
+}
+
+.item-icon {
+  cursor: pointer;
+  font-size: 12px;
+  padding-left: 7px;
+}
+
+.item-delete {
+  color: red;
+}
+
+.item-edit {
+  color: blue;
+}
+
+.item-mark {
+  color: green;
+}
+
+.list-group-item {
+  font-size: 0.9em;
+  line-height: 2.3em;
+  height: 3.3em;
+ overflow: hidden;
+text-overflow: ellipsis;
+-o-text-overflow: ellipsis;
+white-space: nowrap;
+width: 100%;
+}

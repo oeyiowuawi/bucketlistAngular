@@ -1,0 +1,102 @@
+
+
+<!-- </section> -->
+
+<section class="section-bucketlists">
+  <div class="row">
+  <div align="center" style="margin: 2em;">
+    <button type="button" class="btn btn-primary btn-lg bucketlist-btn" data-toggle="modal" data-target="#myModal">ADD A BUCKETLIST</button>
+  </div>
+  </div>
+    <div class="row">
+      <div class="text-center">
+        <h6 style="color: red;">{{error}}</h6>
+      </div>
+      <div class="list-group col-md-3" ng-repeat="bucketlist in bucketlists">
+        <a href="" class="list-group-item active showbucket" data-id="{{bucketlist}}" ng-click="passbucket(bucketlist)" data-toggle="modal" data-target="#myModal2">
+          </span>Title: {{bucketlist.name}}
+        </a>
+        <a href="" class="list-group-item">
+          Number of Items: <span class="badge">{{bucketlist.items.length}}</span>
+        </a>
+        <a href="" class="list-group-item">
+          Created At: <span>{{bucketlist.date_created}}</span>
+        </a>
+        <a href="" class="list-group-item">
+          Last Updated At <span >{{bucketlist.date_modified}}</span>
+        </a>
+        <span class="list-group-item">
+          <a href="" class="delete" ng-click="delete(bucketlist)"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Delete</a>
+          <a href="/#/item/{{bucketlist.id}}" ng-click="retainItemList(bucketlist)" class="delete pull-right" ><span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span> Manage Items</a>
+
+        </span>
+        <!-- <a href="" class="list-group-item text-center">
+          <button class="btn btn-danger bkl"> Delete</button> <button class="btn btn-primary bkl"> View Items</button>
+        </a> -->
+      </div>
+
+    </div>
+
+<!-- </div> -->
+<div class="modal fade" modal-visible="showDialog" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <h4 class="modal-title" id="myModalLabel">Create Bucketlist</h4>
+    </div>
+    <div class="modal-body">
+      <h6 class="text-center" style="color: red;">{{error}} <h6>
+      <form name="newBucketlist"  novalidate >
+
+        <div class="form-group">
+          <input type="text" ng-model="bucketlistdetail.name"  class="form-control" required placeholder="name">
+        </div>
+
+      </form>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      <button type="button" class="btn btn-primary" ng-click="createBucketlist()">Create Bucketlist</button>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<div class="modal fade" modal-visible="showDialog" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModal2Label" aria-hidden="true">
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <h4 class="modal-title" id="myModal2Label">{{bucket.name + "id:" + bucket.id}}</h4>
+      <!-- <h4 class="" id="created_at"> {{bucketlist.date_created}}</h4> -->
+    </div>
+    <div class="modal-body">
+      <p> Created At: {{bucket.date_created}} </p>
+      <p> Updated At: {{bucket.date_modified}} </p>
+      <ul ng-repeat="item in bucket_items">
+        <li> {{item.name}} </li>
+      </ul>
+      <h6 class="text-center" style="color: red;">{{error}} <h6>
+      <form name="editBucketlist"  novalidate >
+
+        <div class="form-group">
+          <label> Update Name of Bucketlist</label><input type="text" ng-model="bucket.name"  class="form-control" required placeholder="update name">
+        </div>
+
+      </form>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      <button type="button" class="btn btn-primary" ng-click="updateBucket(bucket.id)">Update Bucketlist</button>
+    </div>
+  </div>
+</div>
+</div>
+
+</section>

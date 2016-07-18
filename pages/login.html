@@ -1,0 +1,25 @@
+<section class="plain">
+  <div class="container signup-container">
+    <div class="form-div">
+      <div>
+        <h5 class="text-center"> Login </h5>
+        <h6 class="error">{{ error }}</h6>
+      </div>
+      <form name="registeration" ng-submit="login()" novalidate >
+
+        <div class="form-group">
+          <input type="email" ng-model="loginUser.email"  class="form-control email-field" id="email" required placeholder="Email">
+        </div>
+
+        <div class="form-group">
+          <input type="password" name="password" ng-model="loginUser.password"  class="form-control email-field" id="password" required placeholder="Password">
+        </div>
+
+         <div class="form-group">
+          <input type="submit" value="login" class="form-control btn-primary submit-button email-field" >
+        </div>
+      </form>
+      <div> Don't have an account? <a href="#register">Sign Up</a></div>
+    </div>
+  </div>
+</section>

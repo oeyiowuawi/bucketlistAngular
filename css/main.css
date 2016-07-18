@@ -1,0 +1,126 @@
+.main-index-section {
+  height: 960px;
+  padding: 50px;
+  background: url(../images/index.jpg) no-repeat top left;
+  background-size: 100%;
+}
+.list-group-item.active {
+  background-color: #3D4045 !important;
+}
+
+.message-div{
+  color: white;
+  margin-top: 10%;
+  text-align: center;
+  padding: 10em;
+  width: 50% !important;
+}
+
+.welcome-message-div {
+  color: white;
+}
+
+.welcome-details {
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 13px;
+  line-height: 22px;
+}
+
+.welcome-title {
+  margin-top: 3px;
+  margin-bottom: 1px;
+  text-align: center;
+  font-weight: 100;
+  font-family: "Oswald",Helvetica,sans-serif;
+  letter-spacing: 20px;
+  line-height: 100px;
+}
+
+.plain {
+  height: 960px;
+  padding: 50px;
+  background: url(../images/index.jpg) no-repeat top left;
+  background-size: 100%;
+}
+
+.index-button-div {
+
+}
+
+.index-signup-btn {
+  background-color: rgba(179,119,82,0.85)!important;
+  border-color: transparent;
+  border-radius: 0px;
+  font-family: "Oswald",Helvetica,sans-serif;
+  color: white;
+  line-height: 25px;
+  letter-spacing: 2px;
+  padding: 10px 12px;
+  text-align: center;
+  width: 28%;
+  display: inline-block;
+}
+
+.index-signup-btn:hover {
+  color: white;
+}
+.index-login-btn:hover {
+  color: white;
+}
+
+
+.index-login-btn {
+  background-color: #3D4045;
+  border-color: transparent;
+  border-radius: 0px;
+  font-family: "Oswald",Helvetica,sans-serif;
+  color: white;
+  line-height: 25px;
+  letter-spacing: 2px;
+  padding: 10px 12px;
+  text-align: center;
+  width: 20%;
+  display: inline-block;
+}
+
+.navbar{
+  background-color: #3D4045 !important;
+  font-family: "Oswald",Helvetica,sans-serif;
+  letter-spacing: 1px;
+}
+
+.navbar-default .navbar-nav>a {
+    color: #fff;
+}
+
+.nav-link {
+    color: #fff !important;
+}
+
+.nav-link:hover {
+    color: rgba(179,119,82,0.85)!important;
+    background-color: transparent;
+  }
+
+.nav-link:focus {
+    color: white;
+    background-color: transparent;
+}
+
+.nav-link:active{
+
+color: rgba(179,119,82,0.85)!important;
+}
+
+.delete {
+  color: #000;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #3D4045 !important;
+}

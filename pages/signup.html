@@ -1,0 +1,30 @@
+
+<section class="plain">
+<div class="container signup-container ">
+  <div class="form-div">
+    <h2 class="signup-header">Sign Up </h2>
+    <form name="registeration" ng-submit="registeration.$valid && submit()" novalidate >
+      <div class="form-group">
+        <input name="name" ng-model="user.name"  class="form-control email-field " id="name" required placeholder="Name">
+      </div>
+
+      <div class="form-group">
+        <input type="email" ng-model="user.email"  class="form-control email-field" id="email" required placeholder="Email">
+      </div>
+
+      <div class="form-group">
+        <input type="password" name="password" ng-model="user.password"  class="form-control email-field" id="password" required placeholder="Password">
+      </div>
+
+      <div class="form-group">
+        <input type="password" name="password" ng-model="user.password_confirmation"  class="form-control email-field" id="password" required placeholder="Password confirmation">
+      </div>
+
+       <div class="form-group">
+        <input type="submit" value="REGISTER" class="form-control btn-primary submit-button email-field">
+      </div>
+      <div> Already registered? <a href="#login">Login Here</a></div>
+    </form>
+  <div>
+</div>
+</section>
